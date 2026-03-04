@@ -1,1 +1,53 @@
-# Desarrollo_Web
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        <style>
+        .contenedor-principal{
+            border: 2px solid black;
+            background: fuchsia;
+            width: 600px;
+            height: 500px;
+        }
+
+        .contenedor-principal div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        
+        /* div{
+            background: bisque;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;    
+        } */
+
+        /*.contenedor{
+            background: salmon;
+            position: relative;
+            /*top: 20px;
+            left: 100px;*/
+            right: 0;
+            /*bottom: 100px; 
+        }*/
+    </style>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+    </div>
+</body>
+</Desar
