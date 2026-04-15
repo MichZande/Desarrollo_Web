@@ -1,28 +1,69 @@
 body {
+    background-color: #0f0f0f; /* Negro oscuro */
+    color: #ffffff; /* Texto blanco */
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    padding: 20px;
 }
 
-header {
-    background-color: #333;
-    color: white;
+h1 {
+    color: #a2d2ff; /* Azul claro como sus ojos */
     text-align: center;
+    border-bottom: 2px solid #a2d2ff;
+}
+
+h2 {
+    color: #b8b8b8;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.mi-boton-wiki {
+    display: inline-block;
+    background-color: #a2d2ff;
+    color: #000;
+    padding: 10px 25px;
+    text-decoration: none; /* Quita la línea de subrayado del enlace */
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #a2d2ff;
+    transition: 0.3s; /* Para que el efecto al pasar el mouse sea suave */
+}
+
+.mi-boton-wiki:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #ffffff;
+    transform: scale(1.05); /* Se hace un poquito más grande */
+}
+.contenedor-gojo {
+    display: flex;         /* Activa el modo de cajas alineadas */
+    align-items: center;   /* Centra el texto verticalmente respecto a la imagen */
+    gap: 30px;            /* Espacio de separación entre el texto y la foto */
+    margin-top: 40px;
+    background: #1a1a1a;   /* Un fondo ligeramente distinto para resaltar la caja */
     padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
 }
 
-.contenido {
-    padding: 20px;
+.texto {
+    flex: 1;               /* Toma el espacio necesario */
+    text-align: left;      /* Alinea el texto a la izquierda */
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
+.imagen {
+    flex: 1;               /* La imagen ocupará la otra mitad */
+    display: flex;
+    justify-content: center;
 }
 
-button:hover {
-    background-color: #45a049;
+/* Para que en celulares se ponga uno arriba del otro */
+@media (max-width: 600px) {
+    .contenedor-gojo {
+        flex-direction: column;
+    }
 }
+
+
